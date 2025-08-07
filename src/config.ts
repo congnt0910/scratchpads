@@ -36,7 +36,7 @@ export class Config {
     this.customPath = this.getExtensionConfiguration(CONFIG_SCRATCHPADS_FOLDER) as string;
 
     this.scratchpadsRootPath = path.join(this.customPath || this.globalPath, SCRATCHPADS_FOLDER_NAME);
-    this.projectScratchpadsPath = path.join(this.scratchpadsRootPath, this.projectPathMD5);
+    this.projectScratchpadsPath = this.scratchpadsRootPath;
     this.recentFiletypesFilePath = path.join(this.scratchpadsRootPath, RECENT_FILETYPES_FILE);
   }
 
